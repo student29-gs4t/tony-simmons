@@ -1,0 +1,10 @@
+html{
+    font-family:'Times New Roman';
+    color: rgb(189, 148, 228);
+}
+body{
+    background-color: rgb(175, 236, 247);
+}
+p {
+    font-size: 1rem;
+}

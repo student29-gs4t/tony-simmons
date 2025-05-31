@@ -8,4 +8,4 @@ console.log("Hello",name);
 
 greeting("Gaby");
 
-let newName = document.getElementByid("greeter").value
+let newName = document.getElementByid("greeter").value;

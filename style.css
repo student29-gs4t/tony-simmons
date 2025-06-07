@@ -2,6 +2,41 @@ html{
     font-family:'Times New Roman';
     color: rgb(189, 148, 228);
 }
+
+.navbar {
+    background-color: rgb(199, 161, 235);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap:5em;
+}
+
+.nav-links li a { 
+text-decoration: none;
+color: rgb(247, 249, 250);
+padding: 0.5em 1em;
+border-radius: 0.5em;
+transition:0.2s; 
+}
+
+.nav-links li a:hover {
+    background-color: bisque;
+}
+
+.title {
+    text-align: center;
+    padding: 1em;
+}
+
+.current{
+     text-decoration: underline dotted rgb(247, 249, 250) 0.3em;
+}
 body{
     background-color: rgb(175, 236, 247);
     margin: 0;
@@ -25,3 +60,24 @@ p {
     flex-direction: column;
     padding-bottom: 5%;
 }
+
+.accordion-header {
+    width: 100%;
+    background-color: rgb(4, 238, 247);
+    border:none; 
+    padding:1em; 
+    text-align: left;
+    font-size:1.1rem;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.accordion-header:hover {
+    background-color: antiquewhite;
+}
+
+.accordion-content {
+    display: none;
+}
+

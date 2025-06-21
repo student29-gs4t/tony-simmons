@@ -21,3 +21,22 @@ document.querySelectorAll('.accordion-header').forEach(function(button){
     content.style.display = (content.style.display=== 'block') ? 'none' : 'block' ;
     });
 });
+const PASSWORD ="lifeisfun";
+function validatepass() {
+    const login = document.getElementById('password');
+    const message = document.getElementById('message'); 
+    const hiddenEntries = document.querySelectorAll('.hidden');
+  
+
+
+    if (login.value === PASSWORD) { 
+        message.textContent= 'password confirmed see hidden entries below.';
+        hiddenEntries.forEach(function(entry) { entry.style.display ='flex';});    
+    } else { 
+        hiddenEntries.forEach(function(entry) { entry.style.display ='none';});
+        message.textContent= 'password denied. try again.';
+    }
+    
+    login.value = '';
+}
+
